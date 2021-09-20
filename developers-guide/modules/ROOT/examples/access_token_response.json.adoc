@@ -1,0 +1,24 @@
+[source,json]
+----
+{
+  "exp": 1624659505,
+  "iat": 1624659205,
+  "jti": "3e95f366-0b2e-4e2c-a03e-08c38694b68d",
+  "iss": "https://login.biblebreeze.com/auth/realms/biblebreeze",
+  "sub": "17344b22-931b-474f-9f3e-851383a557d8",
+  "typ": "Bearer",
+  "azp": "account",
+  "session_state": "cd029762-9c98-4475-b935-f950e850b3be",
+  "acr": "1",
+  "scope": "openid profile email bb-app",
+  "email_verified": true,
+  "user_name": "calvinellis75@gmail.com",
+  "name": "Calvin Ellis",
+  "last_name": "Ellis",
+  "locale": "en",
+  "app_id": "setMe",
+  "first_name": "Calvin",
+  "email": "calvinellis75@gmail.com",
+  "picture": "https://lh3.googleusercontent.com/a-/AOh14GiPH_c_ijNS6scLx2NolFrMPryfa4yEWf-zYeiT=s96-c"
+}
+----

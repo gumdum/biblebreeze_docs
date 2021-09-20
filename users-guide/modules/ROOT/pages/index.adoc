@@ -1,0 +1,23 @@
+:navtitle: Overview
+:description: Bible Breeze is an intuitive software for reading and learning the Bible.
+
+////
+This is the start page of plugin's documentation, and therefore likely the first thing people read. This doc provides a brief overview of the functionality of that this plugin provides.
+////
+
+{description}
+Publish with confidence using automated builds.
+
+== Writing technical documentation
+When writing technical documentation, it needs  to be a team effort where everyone contributes and collaborates. For the content, you write what you want to be able to publish for difference audiences in different target formats like static HTML pages, in-line help or PDF's.
+
+== Why to use AsciiDoc and IntelliJ
+
+The AsciiDoc format allows you to write your content once and automate its publishing using standard build automation tools.
+
+It provides the writer with...
+----
+* a content sensitive editor
+* a configurable preview and
+* integrations to the AsciiDoc ecosystem
+----

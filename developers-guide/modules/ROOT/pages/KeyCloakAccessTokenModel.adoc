@@ -1,0 +1,39 @@
+[source,java]
+----
+KeyCloakAccessTokenModel(
+      {required this.fullName,
+      required this.userName,
+      required this.firstName,
+      required this.lastName,
+      required this.email,
+      required this.emailVerified,
+      required this.picture,
+      required this.locale,
+      required this.website,
+      required this.gender,
+      required this.zoneinfo,
+      required this.birthdate,
+      required this.updatedAt});
+----
+
+
+
+[source, java]
+----
+Map<String, dynamic> toMap() => {
+        'name': fullName,
+        'gender': gender,
+        'zoneinfo': zoneinfo,
+        'user_name': userName,
+        'birthdate': birthdate,
+        'locale': locale,
+        'last_name': lastName,
+        'website': website,
+        'picture': picture,
+        'updated_at': updatedAt,
+        'email_verified': emailVerified,
+        'first_name': firstName,
+        'email': email,
+        'app_user_id': appUserId,
+      };
+----

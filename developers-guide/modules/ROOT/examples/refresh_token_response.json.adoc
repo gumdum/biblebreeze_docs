@@ -1,0 +1,15 @@
+[source,json]
+----
+{
+  "exp": 1624654399,
+  "iat": 1624652599,
+  "jti": "80bee8a1-e4f9-4224-9f57-d81a2d9f2556",
+  "iss": "https://login.biblebreeze.com/auth/realms/biblebreeze",
+  "aud": "https://login.biblebreeze.com/auth/realms/biblebreeze",
+  "sub": "8006b997-0f57-4594-8cdf-1f6254a18e4d",
+  "typ": "Refresh",
+  "azp": "account",
+  "session_state": "baca3ec7-5368-49f4-97bc-678e3a3c6266",
+  "scope": "profile email bb-app"
+}
+----

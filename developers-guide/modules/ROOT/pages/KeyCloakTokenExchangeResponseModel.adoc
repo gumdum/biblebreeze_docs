@@ -1,0 +1,96 @@
+== KeyCloakTokenExchangeResponseModel
+:description: Java Web Token model. Retrieved from KeyCloak server via a token-exchange. Called from Future function link:copyAccessTokenToKeyCloak 
+
+{description}
+
+== Json Model
+This returns a json model
+
+== KeyCloakTokenExchangeResponseModel
+[source,javascript]
+----
+  KeyCloakTokenExchangeResponseModel({
+    required this.accessToken,
+    required this.expiresIn,
+    required this.refreshExpiresIn,
+    required this.refreshToken,
+    required this.tokenType,
+    required this.notBeforePolicy,
+    required this.sessionState,
+    required this.scope,
+
+  });
+----
+
+=== Read
+
+[cols="h,5a"]
+|===
+| URL
+| 'https://login.biblebreeze.com:8443/auth/realms/biblebreeze/protocol/openid-connect/token';
+
+| Method
+| GET
+
+| Access Token Response
+| include::{docdir}/../examples/access_token_response.json.adoc[]
+
+| Expires In
+| 300
+
+| Refresh Expires In
+| 1800
+
+| Refresh Token
+| include::{docdir}/../examples/refresh_token_response.json.adoc[]
+
+
+| Token Type
+| Bearer
+
+| Not Before Policy
+| 0
+
+| Session State
+| baca3ec7-5368-49f4-97bc-678e3a3c6266
+
+| Scope
+| profile email bb-app
+
+| App Id
+| setMe
+
+|
+|===
+
+=== Raw Return From Url Before Modeling
+[source,json]
+---
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJnTjI1OFNDbkpmbjU1RDZHODQ1SUZHcjAwRWxoYXhCU25RY2I0akZYTUhZIn0.eyJleHAiOjE2MjQ2NTI4OTksImlhdCI6MTYyNDY1MjU5OSwianRpIjoiN2ExODM5NmEtN2VmMC00MTM4LWJiNWQtNDYzMjRmZTFhM2IzIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5iaWJsZWJyZWV6ZS5jb20vYXV0aC9yZWFsbXMvYmlibGVicmVlemUiLCJzdWIiOiI4MDA2Yjk5Ny0wZjU3LTQ1OTQtOGNkZi0xZjYyNTRhMThlNGQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhY2NvdW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImJhY2EzZWM3LTUzNjgtNDlmNC05N2JjLTY3OGUzYTNjNjI2NiIsImFjciI6IjEiLCJzY29wZSI6InByb2ZpbGUgZW1haWwgYmItYXBwIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJHdW1kdW0iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJndW1kdW1AY2FsdmluZWxsaXMuZGV2IiwiZ2l2ZW5fbmFtZSI6Ikd1bWR1bSIsImFwcF9pZCI6InNldE1lIiwiZW1haWwiOiJndW1kdW1AY2FsdmluZWxsaXMuZGV2In0.cb2hW6S8w3i8MDVs0gxrT8MJosEiyuJnl3UlRIEHkR4eDkeB-_va-jrjbqM5fYDi2W-BIwFvH7qIokXyGyDv-RW4nrkScctVn9DZfeFEW8zrMIlDqL81GGwgeXSWZGcLWdCW4ur9iffXV7IKW-06ksKVhqqAxX6g50Gtcu5rn7XNC4IgJOxVnr2bVofUhYomuV7rHK5EPI4tRiIioXnokxFb7TJT4CSdKd9yCSLAJrboDk0gJYKb0T1Q3CRlIGx1jPFvpy8-YecN_Mm7cZUmMmeSweLktWVdhW2gWuQR_uQ6M_0EoxSE1besNxP85RhffKiCLDTRNowjtO5SL8yY0A",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwODRjNGY4Ni05NzgwLTRjYmEtOTYxMS1jYWZiNGQ3NTkyMjUifQ.eyJleHAiOjE2MjQ2NTQzOTksImlhdCI6MTYyNDY1MjU5OSwianRpIjoiODBiZWU4YTEtZTRmOS00MjI0LTlmNTctZDgxYTJkOWYyNTU2IiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5iaWJsZWJyZWV6ZS5jb20vYXV0aC9yZWFsbXMvYmlibGVicmVlemUiLCJhdWQiOiJodHRwczovL2xvZ2luLmJpYmxlYnJlZXplLmNvbS9hdXRoL3JlYWxtcy9iaWJsZWJyZWV6ZSIsInN1YiI6IjgwMDZiOTk3LTBmNTctNDU5NC04Y2RmLTFmNjI1NGExOGU0ZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJhY2NvdW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImJhY2EzZWM3LTUzNjgtNDlmNC05N2JjLTY3OGUzYTNjNjI2NiIsInNjb3BlIjoicHJvZmlsZSBlbWFpbCBiYi1hcHAifQ.TuIEyqWchaz-7Y5Tl8FH5niUNK8kxf3H_b1oQvriu7c",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "baca3ec7-5368-49f4-97bc-678e3a3c6266",
+    "scope": "profile email bb-app",
+    "app_id": "setMe"
+}
+----
+
+=== Google Access Token 
+
+[cols="h,5a"]
+|===
+| URL
+| https://developers.google.com/oauthplayground/
+
+| Method
+| POST
+
+| Access Token Response
+| include::{docdir}/../examples/google_access_token.json.adoc[]
+
+|
+|===

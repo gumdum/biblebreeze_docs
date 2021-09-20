@@ -1,0 +1,15 @@
+[plantuml, format=svg, opts="inline"]
+----
+skinparam Legend {
+	BackgroundColor transparent
+	BorderColor transparent
+}
+legend
+Root
+|_ Element 1
+  |_ Element 1.1
+  |_ Element 1.2
+|_ Element 2
+  |_ Element 2.1
+end legend
+----

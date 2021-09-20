@@ -1,0 +1,26 @@
+== Bible Table of Contents
+:description: The Bible table of contents endpoint is a read-only get currently. Future version should include either a POST or part of the GET for language support.
+
+{description}
+
+== Json Model
+This returns a json model which contains information for the selection of a specific verse in the bible_toc presentation.
+
+=== Read
+
+[cols="h,5a"]
+|===
+| URL
+| https://api.biblebreeze.com/v1/bible_toc
+
+| Method
+| GET
+
+| Response Body
+| include::{docdir}/../examples/bible_toc.json.adoc[]
+|===
+
+== Related Source Code
+
+
+

@@ -1,0 +1,19 @@
+[source,json]
+----
+{
+  "iss": "https://accounts.google.com",
+  "azp": "407408718192.apps.googleusercontent.com",
+  "aud": "407408718192.apps.googleusercontent.com",
+  "sub": "114485062752446622399",
+  "email": "calvinellis75@gmail.com",
+  "email_verified": true,
+  "at_hash": "p7JoNwrdY7xzRyPZastN6g",
+  "name": "Calvin Ellis",
+  "picture": "https://lh3.googleusercontent.com/a-/AOh14GiPH_c_ijNS6scLx2NolFrMPryfa4yEWf-zYeiT=s96-c",
+  "given_name": "Calvin",
+  "family_name": "Ellis",
+  "locale": "en",
+  "iat": 1624655249,
+  "exp": 1624658849
+}
+----
